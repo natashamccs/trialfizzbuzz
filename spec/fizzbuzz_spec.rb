@@ -8,7 +8,7 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(5)).to eq 'buzz'
   end
   it 'returns "1" when passed 1' do
-    expect(fizzbuzz(1)).to eq '1'
+    expect(fizzbuzz(1)).to eq 1
   end
   it 'returns "fizz" when passed 6' do
     expect(fizzbuzz(6)).to eq 'fizz'
@@ -18,5 +18,14 @@ describe 'fizzbuzz' do
   end
   it 'returns "fizzbuzz" when passed 15' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
+  end
+  it 'returns "2" when passed 2' do
+    expect(fizzbuzz(2)).to eq 2
+  end
+  it 'returns "please enter an integer" when passed a' do
+    expect(fizzbuzz("a")).to eq "please enter an integer"
+  end
+  it 'returns "please enter an integer" when passed 1.5' do
+    expect(fizzbuzz(1.5)).to eq "please enter an integer"
   end
 end
